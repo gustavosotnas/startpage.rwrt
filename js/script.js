@@ -170,19 +170,19 @@ $(document).ready(function() {
 	
 	/*  Hide lists  *\
 	\*==============*/
-	$('ul').slideUp();
+//	$('ul').slideUp();
 
 	/*  Show on hover  *\
 	\*=================*/
-	$('.block').mouseenter(function() {
+//	$('.block').mouseenter(function() {
 		$('ul', this).slideDown();
-	});
+//	});
 
 	/*  Hide on unhover  *\
 	\*===================*/
-	$('.block').mouseleave(function() {
-		$('ul', this).slideUp();
-	});
+//	$('.block').mouseleave(function() {
+//		$('ul', this).slideUp();
+//	});
 
 
 	/*  Search Engines  *\
