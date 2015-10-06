@@ -43,14 +43,7 @@ var settings = {
 	
 	"search": {
 		"engines": [
-			["http://www.google.com/search", "q", "Google", "sg"],
-			["http://www.google.com/images", "q", "Google Images", "si"],
-			["http://search.yahoo.com/search", "p", "Yahoo", "sy"],
-			["http://wikipedia.org/w/index.php", "w", "Wikipedia", "sw"],
-			["http://www.dict.cc", "s", "dict.cc", "sd"],
-			["http://dict.leo.org", "search", "leo", "sl"],
-			["http://www.flickr.com/search", "q", "flickr", "sf"],
-			["http://browse.deviantart.com/", "q", "deviantArt", "sa"]
+			["http://www.google.com/search", "q", " Google", "sg"],
 		],
 		"focusSearch": false
 	},
@@ -92,7 +85,7 @@ function updateClock() {
 function searchBox(url, name, placeholder) {
 	var string = '<form method="get" action="' + url + '">'
 	           + '<input type="text" id="g" name="' + name + '" placeholder="' + placeholder + '" maxlength="255" value="">'
-	           + '<input type="submit" value="Go">'
+	           + '<input type="submit" value="Pesquisar">'
 	           + '</form>';
 	return string;
 }
