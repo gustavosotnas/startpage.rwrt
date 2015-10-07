@@ -43,7 +43,7 @@ var settings = {
 	
 	"search": {
 		"engines": [
-			["http://www.google.com/search", "q", " Google", "sg"],
+			["http://www.google.com/search", "q", "Google", "sg"],
 		],
 		"focusSearch": false
 	},
