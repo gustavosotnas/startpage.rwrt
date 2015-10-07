@@ -32,17 +32,29 @@
 	THE SOFTWARE.
 */
 
+@font-face {
+	font-family: "Roboto Condensed Light";
+	font-weight: 700;
+	src: url('../font/RobotoCondensed-Light.ttf');
+}
+
+@font-face {
+	font-family: "Roboto Light";
+	font-weight: 300; /* Roboto Light */
+	src: url('../font/Roboto-Light.ttf');
+}
+
 body {
 	background: #151515;										/* Page background */
 	color: #999;														/* Font color */
-	padding: 150px;													/* Padding between link blocks and edge */
-	font-family: "Museo", "Helvetica Neue", sans-serif;	/* Font */
+	padding: 125px;													/* Padding between link blocks and edge */
+	font-family: "Roboto Light", sans-serif;	/* Font */
 	text-shadow: rgba(0,0,0,0.6) 1px 1px 0; /* Text Shadow */
 }
 
 a {
 	color: #999;														/* Link Color */
-	font-size: 11px;												/* Link Size */
+	font-size: 14px;												/* Link Size */
 	text-decoration: none;									/* Remove underlines */
 }
 
@@ -58,12 +70,13 @@ a:hover {
 }
 
 h1 {
+	font-family: "Roboto Condensed Light";						/* Title font */
 	margin: 0;
-	font-size: 1.5em;												/* Title size */
+	font-size: 2em;												/* Title size */
 }
 
 ul {
-	padding: 0.25em;
+	padding: 0em;
 }
 
 ul li {
@@ -106,6 +119,7 @@ form input {
 	box-shadow: rgba(0,0,0,0.2) 0 1px 2px;					/* Shadow search box - generic */
 	color: #ddd;														/* Text color search box */
 	font-size: 1em;													/* Text size search box */
+	padding-left: 0.5em;							/*Padding for the word "Google"*/
 }
 
 form input:first-child {
