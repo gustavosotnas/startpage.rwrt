@@ -38,7 +38,7 @@
 \*==========*/
 var settings = {
 	"navigation": {
-		"newWindow": true
+		"newWindow": false
 	},
 	
 	"search": {
