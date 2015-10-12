@@ -69,6 +69,17 @@ a:hover {
 	width: 140px;														/* Link block width */
 }
 
+button {
+
+	background: transparent;									/* Transparent button */
+	border: none !important;
+}​
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 h1 {
 	font-family: "Roboto Condensed Light";						/* Title font */
 	color: #fff;												/* Font color */
@@ -103,21 +114,8 @@ form {
 }
 
 form input {
-	background: #333;												/* Background search box */
-	background: -webkit-gradient(						/*		gradient for webkit */
-		linear,
-		left top,
-		left bottom,
-		from(#222),
-		to(#333));
-	background: -moz-linear-gradient(				/*		gradient for gecko */
-		top,
-		#222,
-		#333);
-	border: 1px solid #444;									/* Border search box */
-	-webkit-box-shadow: rgba(0,0,0,0.2) 0 1px 2px;	/* Shadow search box - webkit */
-	-moz-box-shadow: rgba(0,0,0,0.2) 0 1px 2px;			/* Shadow search box - gecko */
-	box-shadow: rgba(0,0,0,0.2) 0 1px 2px;					/* Shadow search box - generic */
+	background: transparent;									/* Transparent button */
+	border: none !important;
 	color: #ddd;														/* Text color search box */
 	font-size: 1em;													/* Text size search box */
 	padding-left: 0.5em;							/*Padding for the word "Google"*/
