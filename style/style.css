@@ -121,31 +121,15 @@ form {
 
 form input {
 	background: transparent;									/* Transparent button */
-	border: none !important;
+	border-style: solid;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+    border-bottom:1px solid #434343;
 	font-family: "Windlesham Pro Medium";
-	color: #ddd;														/* Text color search box */
+	color: #5c5c5c;														/* Text color search box */
 	font-size: 1.1em;													/* Text size search box */
 	padding-left: 0.5em;							/*Padding for the word "Google"*/
-}
-
-form input:first-child {
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-bottomleft: 5px;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-right: 0;
-}
-
-form input:last-child {
-	-webkit-border-top-right-radius: 5px;
-	-webkit-border-bottom-right-radius: 5px;
-	-moz-border-radius-topright: 5px;
-	-moz-border-radius-bottomright: 5px;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	border-left: 0;
 }
 
 /* form starting stylings ------------------------------- */
@@ -155,14 +139,13 @@ form input:last-child {
 }
 
 input 				{
-  font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
-  width:300px;
+  width:280px; /* 300px in the page, because of the padding */
   border:none;
   border-bottom:1px solid #757575;
 }
-input:focus 		{ outline:none; }
+input:focus { outline:none; color: #fff;}
 
 /* LABEL ======================================= */
 label 				 {
@@ -193,7 +176,7 @@ input:focus ~ label, input:valid ~ label 		{
   width:0;
   bottom:1px; 
   position:absolute;
-  background:#5264AE; 
+  background:#468fcc; 
   transition:0.2s ease all; 
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
@@ -214,7 +197,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 .highlight {
   position:absolute;
   height:60%; 
-  width:100px; 
+  width:300px; 
   top:25%; 
   left:0;
   pointer-events:none;
@@ -230,15 +213,15 @@ input:focus ~ .highlight {
 
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
-	from { background:#5264AE; }
+	from { background:#468fcc; }
   to 	{ width:0; background:transparent; }
 }
 @-moz-keyframes inputHighlighter {
-	from { background:#5264AE; }
+	from { background:#468fcc; }
   to 	{ width:0; background:transparent; }
 }
 @keyframes inputHighlighter {
-	from { background:#5264AE; }
+	from { background:#468fcc; }
   to 	{ width:0; background:transparent; }
 }
 
