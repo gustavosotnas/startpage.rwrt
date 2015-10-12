@@ -44,6 +44,12 @@
 	src: url('../font/Roboto-Light.ttf');
 }
 
+@font-face {
+	font-family: "Windlesham Pro Medium"; /* Similar font to Google's 2015 logo */
+	font-weight: 300; /* Roboto Light */
+	src: url('../font/Windlesham-Pro-Medium.ttf');
+}
+
 body {
 	background: #212121;										/* Page background */
 	color: #bcbcbc;														/* Font color (affects clock)*/
@@ -116,8 +122,9 @@ form {
 form input {
 	background: transparent;									/* Transparent button */
 	border: none !important;
+	font-family: "Windlesham Pro Medium";
 	color: #ddd;														/* Text color search box */
-	font-size: 1em;													/* Text size search box */
+	font-size: 1.1em;													/* Text size search box */
 	padding-left: 0.5em;							/*Padding for the word "Google"*/
 }
 
