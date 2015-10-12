@@ -6,7 +6,6 @@
 
 	customization by Gustavo Moraes <http://about.me/gustavosotnas>
 */
-
 /**
 	Released under MIT License
 	
@@ -37,77 +36,63 @@
 	font-weight: 700;
 	src: url('../font/RobotoCondensed-Light.ttf');
 }
-
 @font-face {
 	font-family: "Roboto Light";
 	font-weight: 300; /* Roboto Light */
 	src: url('../font/Roboto-Light.ttf');
 }
-
 @font-face {
 	font-family: "Windlesham Pro Medium"; /* Similar font to Google's 2015 logo */
 	font-weight: 300; /* Roboto Light */
 	src: url('../font/Windlesham-Pro-Medium.ttf');
 }
-
 body {
-	background: #212121;										/* Page background */
-	color: #bcbcbc;														/* Font color (affects clock)*/
-	padding: 125px;													/* Padding between link blocks and edge */
-	font-family: "Roboto Light", sans-serif;	/* Font */
-	text-shadow: rgba(0,0,0,0.6) 1px 1px 0; /* Text Shadow */
+	background: #212121; /* Page background */
+	color: #bcbcbc; /* Font color (affects clock)*/
+	padding: 125px; /* Padding between link blocks and edge */
+	font-family: "Roboto Light", sans-serif; /* Font */
+	text-shadow: rgba(0, 0, 0, 0.6) 1px 1px 0; /* Text Shadow */
 }
-
 a {
-	color: #bcbcbc;														/* Link Color */
-	font-size: 14px;												/* Link Size */
-	text-decoration: none;									/* Remove underlines */
+	color: #bcbcbc; /* Link Color */
+	font-size: 14px; /* Link Size */
+	text-decoration: none; /* Remove underlines */
 }
-
 a:hover {
-	color: #fff;														/* Link hover color */
+	color: #fff; /* Link hover color */
 }
-
 .block {
-	border-left: 1px solid #999;						/* Left border of link block */
+	border-left: 1px solid #999; /* Left border of link block */
 	float: left;
-	padding: 1em;														/* Padding around link block */
-	width: 140px;														/* Link block width */
+	padding: 1em; /* Padding around link block */
+	width: 140px; /* Link block width */
 }
-
 button {
-
-	background: transparent;									/* Transparent button */
+	background: transparent; /* Transparent button */
 	border: none !important;
-}​
-
-img {
+}
+​img {
 	max-width: 100%;
 	height: auto;
 }
-
 h1 {
-	font-family: "Roboto Condensed Light";						/* Title font */
-	color: #fff;												/* Font color */
+	font-family: "Roboto Condensed Light"; /* Title font */
+	color: #fff; /* Font color */
 	margin: 0;
-	font-size: 2em;												/* Title size */
+	font-size: 2em; /* Title size */
 }
-
 ul {
 	padding: 0em;
 }
-
 ul li {
 	list-style: none;
 	padding: 5px;
 }
-
 #searches {
-	position: absolute;											/* Position search box */
-	top: 2em;																/* from top edge */
-	right: 2em;															/* from right edge */
+	position: absolute; /* Position search box */
+	top: 2em; /* from top edge */
+	right: 2em; /* from right edge */
 }
-
 #clock {
 	position: absolute;
 	bottom: 10px;
@@ -115,115 +100,127 @@ ul li {
 	font-size: 2em;
 }
 
+/* SEARCH BOX ================================= */
+
 form {
 	margin-top: 1em;
 }
-
 form input {
-	background: transparent;									/* Transparent button */
+	background: transparent; /* Transparent button */
 	border-style: solid;
 	border-top: 0px;
 	border-left: 0px;
 	border-right: 0px;
-    border-bottom:1px solid #434343;
+	border-bottom: 1px solid #434343;
 	font-family: "Windlesham Pro Medium";
-	color: #5c5c5c;														/* Text color search box */
-	font-size: 1.1em;													/* Text size search box */
-	padding-left: 0.5em;							/*Padding for the word "Google"*/
+	color: #5c5c5c; /* Text color search box */
+	font-size: 1.1em; /* Text size search box */
+	padding-left: 0.5em; /*Padding for the word "Google"*/
 }
-
-/* form starting stylings ------------------------------- */
-.group 			  { 
-  position:relative; 
-  margin-bottom:45px; 
+.group {
+	position: relative;
+	margin-bottom: 45px;
 }
-
-input 				{
-  padding:10px 10px 10px 5px;
-  display:block;
-  width:280px; /* 300px in the page, because of the padding */
-  border:none;
-  border-bottom:1px solid #757575;
+input {
+	padding: 10px 10px 10px 5px;
+	display: block;
+	width: 280px; /* 300px in the page, because of the padding */
+	border: none;
+	border-bottom: 1px solid #757575;
 }
-input:focus { outline:none; color: #fff;}
-
-/* LABEL ======================================= */
-label 				 {
-  color:#999; 
-  font-size:18px;
-  font-weight:normal;
-  position:absolute;
-  pointer-events:none;
-  left:5px;
-  top:10px;
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
+input:focus {
+	outline: none;
+	color: #fff;
 }
-
-/* active state */
-input:focus ~ label, input:valid ~ label 		{
-  top:-20px;
-  font-size:14px;
-  color:#5264AE;
+label {
+	color: #999;
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 5px;
+	top: 10px;
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
 }
 
 /* BOTTOM BARS ================================= */
-.bar 	{ position:relative; display:block; width:300px; }
-.bar:before, .bar:after 	{
-  content:'';
-  height:2px; 
-  width:0;
-  bottom:1px; 
-  position:absolute;
-  background:#468fcc; 
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
+
+.bar {
+	position: relative;
+	display: block;
+	width: 300px;
+}
+.bar:before,
+.bar:after {
+	content: '';
+	height: 2px;
+	width: 0;
+	bottom: 1px;
+	position: absolute;
+	background: #468fcc;
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
 }
 .bar:before {
-  left:50%;
+	left: 50%;
 }
 .bar:after {
-  right:50%; 
+	right: 50%;
 }
-
 /* active state */
-input:focus ~ .bar:before, input:focus ~ .bar:after {
-  width:50%;
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+	width: 50%;
 }
-
 /* HIGHLIGHTER ================================== */
+
 .highlight {
-  position:absolute;
-  height:60%; 
-  width:300px; 
-  top:25%; 
-  left:0;
-  pointer-events:none;
-  opacity:0.5;
+	position: absolute;
+	height: 60%;
+	width: 300px;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
 }
-
 /* active state */
-input:focus ~ .highlight {
-  -webkit-animation:inputHighlighter 0.3s ease;
-  -moz-animation:inputHighlighter 0.3s ease;
-  animation:inputHighlighter 0.3s ease;
-}
 
+input:focus ~ .highlight {
+	-webkit-animation: inputHighlighter 0.3s ease;
+	-moz-animation: inputHighlighter 0.3s ease;
+	animation: inputHighlighter 0.3s ease;
+}
 /* ANIMATIONS ================ */
+
 @-webkit-keyframes inputHighlighter {
-	from { background:#468fcc; }
-  to 	{ width:0; background:transparent; }
+	from {
+		background: #468fcc;
+	}
+	to {
+		width: 0;
+		background: transparent;
+	}
 }
 @-moz-keyframes inputHighlighter {
-	from { background:#468fcc; }
-  to 	{ width:0; background:transparent; }
+	from {
+		background: #468fcc;
+	}
+	to {
+		width: 0;
+		background: transparent;
+	}
 }
 @keyframes inputHighlighter {
-	from { background:#468fcc; }
-  to 	{ width:0; background:transparent; }
+	from {
+		background: #468fcc;
+	}
+	to {
+		width: 0;
+		background: transparent;
+	}
 }
-
 /* cc BY-NC-SA License :: k3ttc4r :: 2008 :: http://k3ttc4r.deviantart.com */
 /* background by Alexander-GG :: http://alexander-gg.deviantart.com */
