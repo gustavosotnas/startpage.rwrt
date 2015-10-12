@@ -45,21 +45,21 @@
 }
 
 body {
-	background: #151515;										/* Page background */
-	color: #999;														/* Font color */
+	background: #212121;										/* Page background */
+	color: #bcbcbc;														/* Font color (affects clock)*/
 	padding: 125px;													/* Padding between link blocks and edge */
 	font-family: "Roboto Light", sans-serif;	/* Font */
 	text-shadow: rgba(0,0,0,0.6) 1px 1px 0; /* Text Shadow */
 }
 
 a {
-	color: #999;														/* Link Color */
+	color: #bcbcbc;														/* Link Color */
 	font-size: 14px;												/* Link Size */
 	text-decoration: none;									/* Remove underlines */
 }
 
 a:hover {
-	color: #ddd;														/* Link hover color */
+	color: #fff;														/* Link hover color */
 }
 
 .block {
@@ -71,6 +71,7 @@ a:hover {
 
 h1 {
 	font-family: "Roboto Condensed Light";						/* Title font */
+	color: #fff;												/* Font color */
 	margin: 0;
 	font-size: 2em;												/* Title size */
 }
@@ -86,8 +87,8 @@ ul li {
 
 #searches {
 	position: absolute;											/* Position search box */
-	top: 2em;																/*		from top edge */
-	right: 2em;															/*		from right edge */
+	top: 2em;																/* from top edge */
+	right: 2em;															/* from right edge */
 }
 
 #clock {
