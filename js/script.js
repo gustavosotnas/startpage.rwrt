@@ -84,10 +84,9 @@ function updateClock() {
 
 function searchBox(url, name, placeholder) {
 	var string = '<form method="get" action="' + url + '">'
-	           + '<input type="text" id="g" name="' + name + '" placeholder="' + placeholder + '" maxlength="255" value="">'
-	           + '<button type="submit">'
-	           + '<img src="./font/magnifying49.svg" height="16" width="16">'
-	           + '</button>'
+	           + '<input type="text" required id="g" name="' + name + '" placeholder="' + placeholder + '" maxlength="255" value="">'
+	           + '<span class="highlight"></span>'
+	           + '<span class="bar"></span>'
 	           + '</form>';
 	return string;
 }
