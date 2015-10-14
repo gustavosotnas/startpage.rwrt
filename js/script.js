@@ -111,7 +111,7 @@ $(document).ready(function() {
 	\*=================*/
 	var i;
 	var count = 1;
-	var html = '';
+	var html = '<div class="board">';
 
 	for(i in linkArray) {
 
@@ -158,7 +158,7 @@ $(document).ready(function() {
 
 	/*  Add generated content to page  *\
 	\*=================================*/
-	html = html + '</ul></div>';
+	html = html + '</ul></div></div>';
 	$('body').append(html);
 
 
