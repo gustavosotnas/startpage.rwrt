@@ -113,7 +113,7 @@ form input {
 	border-right: 0px;
 	border-bottom: 1px solid #434343;
 	font-family: "Windlesham Pro Medium";
-	color: #5c5c5c; /* Text color search box */
+	color: #6f6f6f; /* Text color search box */
 	font-size: 1.1em; /* Text size search box */
 	padding-left: 0.5em; /*Padding for the word "Google"*/
 }
