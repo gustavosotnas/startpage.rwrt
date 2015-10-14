@@ -71,14 +71,18 @@ html, body {
 .board {
     display: table-cell;
     vertical-align: middle;
+	text-align: center;
+	margin: auto;
 }
 .block {
 	border-left: 1px solid #999; /* Left border of link block */
 	float: left;
 	padding: 1em; /* Padding around link block */
 	width: 140px; /* Link block width */
-	display: inline-block;
 	vertical-align: middle;
+}
+.content { /*PROTECTED!*/
+	text-align: left; /*Align h1 text and links text to left*/
 }
 button {
 	background: transparent; /* Transparent button */

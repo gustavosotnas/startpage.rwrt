@@ -129,7 +129,7 @@ $(document).ready(function() {
 			if(count > 1) {
 				html = html + '</div>';
 			}
-			html = html + '<div class="block"><h1>' + line + '</h1><ul>';
+			html = html + '<div class="block"><div class="content"><h1>' + line + '</h1></div><ul>';
 			count++;
 			continue;
 		}
@@ -149,10 +149,10 @@ $(document).ready(function() {
 		/*  Add HTML code  *\
 		\*=================*/
 		if(settings.navigation.newWindow) {
-			html = html + '<li><a href="' + url + '" target="_blank">' + title + '</a></li>'
+			html = html + '<div class="content"><li><a href="' + url + '" target="_blank">' + title + '</a></li></div>'
 		}
 		else {
-			html = html + '<li><a href="' + url + '">' + title + '</a></li>'
+			html = html + '<div class="content"><li><a href="' + url + '">' + title + '</a></li></div>'
 		}
 	}
 
