@@ -79,7 +79,6 @@ html, body {
 	float: left;
 	padding: 1em; /* Padding around link block */
 	width: 140px; /* Link block width */
-	vertical-align: middle;
 }
 .content { /*PROTECTED!*/
 	text-align: left; /*Align h1 text and links text to left*/
