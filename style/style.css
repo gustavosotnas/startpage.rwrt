@@ -88,6 +88,12 @@ ul li {
 	list-style: none;
 	padding: 5px;
 }
+li img {
+	width: 16px;
+	border-width: 0;
+	margin-right: 5px;
+	vertical-align: middle;
+}
 #searches {
 	position: absolute; /* Position search box */
 	top: 2em; /* from top edge */
