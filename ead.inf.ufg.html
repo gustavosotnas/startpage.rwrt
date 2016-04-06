@@ -7,21 +7,27 @@
 		<link type="text/css" rel="stylesheet" href="./style/ead.inf.ufg/github-markdown.css">
 		<link type="text/css" rel="stylesheet" href="./style/ead.inf.ufg/pilcrow.css">
 		<link type="text/css" rel="stylesheet" href="./style/ead.inf.ufg/hljs-github.min.css"/>
-		<script type="text/javascript" src="js/ead.inf.ufg/shortcut.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/ead.inf.ufg/jquery.hotkeys.js"></script>
 		<script>
-			shortcut.add("m",function() {
+			$(document).on('keydown', null, 'm', function(){
 				document.getElementById('moodle').click();
 			});
-			shortcut.add("s",function() {
+			$(document).on('keydown', null, 's', function(){
 				document.getElementById('sigaa').click();
 			});
-			shortcut.add("p",function() {
+			$(document).on('keydown', null, 'p', function(){
 				document.getElementById('persist').click();
 			});
-			shortcut.add("g",function() {
-				document.getElementById('google').click();
+			$(document).on('keydown', null, 'g', function(){
+				$(document).on('keydown', null, 'o', function(){
+					document.getElementById('google').click();
+				});
+				$(document).on('keydown', null, 'i', function(){
+					document.getElementById('github').click();
+				});
 			});
-		</script>		
+		</script>
 	</head>
 	<body>
 		<article class="markdown-body">
