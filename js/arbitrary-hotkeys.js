@@ -1,15 +1,15 @@
 $(document).ready(function() {
 
-    // Detects all keystrokes on the <div id = "keyStrokes">
-	var keyStrokes = $("#keyStrokes").text().split("\n");
+    // Detects all hotkeys on the <div id = "hotkeys">
+	var hotkeys = $("#hotkeys").text().split("\n");
     //Cleans the HTML
-    $("#keyStrokes").empty();
+    $("#hotkeys").empty();
 
     var strokesMapping = [];
     // maps each stroke to an object
-    for(var key in keyStrokes){
+    for(var key in hotkeys){
         //Splits on the ||
-        var map = keyStrokes[key].split("||");
+        var map = hotkeys[key].split("||");
         //Maps to a nice object because it's more organized this way, though not needed.
         var combination = {
             key: jQuery.trim(map[0]),
