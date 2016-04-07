@@ -8,28 +8,17 @@
 		<link type="text/css" rel="stylesheet" href="./style/ead.inf.ufg/pilcrow.css">
 		<link type="text/css" rel="stylesheet" href="./style/ead.inf.ufg/hljs-github.min.css"/>
 		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../arbitrary-hotkeys.git/arbitrary-hotkeys.js"></script>
 		<script type="text/javascript" src="js/ead.inf.ufg/jquery.hotkeys.js"></script>
-		<script>
-			$(document).on('keydown', null, 'm', function(){
-				document.getElementById('moodle').click();
-			});
-			$(document).on('keydown', null, 's', function(){
-				document.getElementById('sigaa').click();
-			});
-			$(document).on('keydown', null, 'p', function(){
-				document.getElementById('persist').click();
-			});
-			$(document).on('keydown', null, 'g', function(){
-				$(document).on('keydown', null, 'o', function(){
-					document.getElementById('google').click();
-				});
-				$(document).on('keydown', null, 'i', function(){
-					document.getElementById('github').click();
-				});
-			});
-		</script>
 	</head>
 	<body>
+    <div id="keyStrokes" style="display: none;">
+git || github
+per || persist
+s || sigaa
+m || moodle
+go || google
+    </div>
 		<article class="markdown-body">
 			<h1 id="eadinfufg">EaD INF/UFG</h1>
 
