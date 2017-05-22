@@ -105,11 +105,11 @@ $(document).ready(function() {
 	
 	/*  Get Links  *\
 	\*=============*/
-	var linkString = $('body').text();
+	var linkString = $('#container').text();
 
 	/*  Clear Page  *\
 	\*==============*/
-	$('body').empty();
+	$('#container').empty();
 
 	/*  Create Array from linkString  *\
 	\*================================*/
@@ -179,7 +179,7 @@ $(document).ready(function() {
 	/*  Add generated content to page  *\
 	\*=================================*/
 	html = html + '</ul></div>';
-	$('body').append(html);
+	$('#container').append(html);
 
 
 	/*  Animation Time!  *\
