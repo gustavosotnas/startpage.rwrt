@@ -124,7 +124,7 @@ li img {
 	right: 2em; /* from right edge */
 }
 #clock {
-	position: absolute;
+	position: fixed;
 	bottom: 10px;
 	right: 10px;
 	font-size: 2em;
