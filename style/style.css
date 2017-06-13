@@ -65,11 +65,8 @@ body {
 	font-family: "Roboto Light", sans-serif; /* Font */
 	text-shadow: rgba(0, 0, 0, 0.6) 1px 1px 0; /* Text Shadow */
 }
-@media (max-width: 1080px) {
-	#container {
-		position: absolute;
-		top: 100px;
-	}
+@media screen and (min-width: 1040px) and (min-height: 560px) {
+	body { overflow: hidden; }
 }
 #container {
 	flex-direction: row;
@@ -77,6 +74,12 @@ body {
 	justify-content: center;
 	flex-wrap: wrap;
 	/*padding-top: 150px;*/
+}
+@media (max-width: 1080px) {
+	#container {
+		position: absolute;
+		top: 100px;
+	}
 }
 a {
 	color: #bcbcbc; /* Link Color */
