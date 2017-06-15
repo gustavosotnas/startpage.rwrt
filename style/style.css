@@ -132,6 +132,13 @@ li img {
 	right: 10px;
 	font-size: 2em;
 }
+@media (max-width: 360px) {
+	#searches {
+		top: 0em;
+		right: initial;
+	}
+	#clock { position: absolute; }
+}
 
 /* SEARCH BOX ================================= */
 
