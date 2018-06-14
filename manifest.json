@@ -1,0 +1,8 @@
+{
+  "name": "startpage.rwrt",
+  "description": "A custom New Tab page by gustavosotnas.",
+  "version": "1.0",
+  "incognito": "split",
+  "chrome_url_overrides": { "newtab": "index.html" },
+  "manifest_version": 2
+}
